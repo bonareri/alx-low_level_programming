@@ -9,17 +9,17 @@ int main(void)
 {
 	int i, p;
 
-	for (i = '0'; i <= '98'; i++)
+	for (i = 0; i <= 98; i++)
 	{
 
-	for (p = i + 1; p <= '99'; p++)
+	for (p = i + 1; p <= 99; p++)
 	{
 	putchar((p / 10) + '0');
 	putchar((p % 10) + '0');
 	putchar(' ');
 	putchar((p / 10) + '0');
 	putchar((p % 10) + '0');
-	if (i == '98' && p == '99')
+	if (i == 98 && p == 99)
 	continue;
 	putchar(',');
 	putchar(' ');
