@@ -1,7 +1,8 @@
 #ifndef MAIN_H
-#define MAIN.H
+#define MAIN_H
 
 _putchar(char c);
+void print_alphabet(void);
 
 
 
