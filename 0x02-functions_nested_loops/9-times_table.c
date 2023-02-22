@@ -8,22 +8,23 @@
 
 void times_table(void)
 {
-	int a, b, x, mult, chek;
+	int num, mult, prod;
 
-	for (a = 0; a <= 9; a++)
+	for (num = 0; num <= 9; num++)
 	{
-	for (b = 0, x = 1; b < 9; b++, x++)
-	{
-	mult = a * b;
-	chek = a * x;
+		_putchar('0');
+		for (mult = 1, mult <= 9; mult++)
+		{
+			_putchar(',');
+			_putchar(' ');
 
-	if (chek > 9 && b != 9)
-		_putchar('%d, ', mult);
-	else if (b == 9)
-		_putchar('%d', mult);
-	else
-		_putchar('%d,  ', mult);
-	}
-	_putchar('\n');
-	}
+			prod = num + mult;
+			if (prod <= 9)
+				_putchar(' ');
+			else
+				_putchar((prod / 10) + 0);
+			_putchar((prod % 10) + 0);
+
+		}
+		_putchar('\n');
 }
