@@ -14,10 +14,10 @@ void jack_bauer(void)
 	{
 	for (min = 0; min < 59; min++)
 	{
-		printf("%02d:%02d", hr, min);
-		printf("\n");
+		_putchar("%02d:%02d", hr, min);
+		_putchar("\n");
 	}
-	printf("%02d:%02d", hr, min);
-	printf("\n");
+	_putchar("%02d:%02d", hr, min);
+	_putchar("\n");
 	}
 }
