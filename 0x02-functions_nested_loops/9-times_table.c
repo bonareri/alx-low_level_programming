@@ -18,12 +18,12 @@ void times_table(void)
 	chek = a * x;
 
 	if (chek > 9 && b != 9)
-		printf("%d, ", mult);
+		_putchar('%d, ', mult);
 	else if (b == 9)
-		printf("%d", mult);
+		_putchar('%d', mult);
 	else
-		printf("%d,  ", mult);
+		_putchar('%d,  ', mult);
 	}
-	putchar('\n');
+	_putchar('\n');
 	}
 }
